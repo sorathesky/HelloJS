@@ -1,0 +1,1 @@
+var global = "This is Worldwide Global News<hr>";
