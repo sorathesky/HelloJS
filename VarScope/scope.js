@@ -17,6 +17,6 @@ function init()
     var obj = document.getElementById("panel");
     obj.innerHTML = global;
     us( obj );
-    us( obj );
+    eu( obj );
 }
 document.addEventListener("DOMContentLoaded", init, false)
