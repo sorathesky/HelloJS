@@ -1,5 +1,3 @@
-var global = "This is Worldwide Global News<hr>";
-
 function us(obj) 
 {
     var local = "***This is United states Local news***<hr>";
@@ -12,6 +10,8 @@ function eu(obj)
     obj.innerHTML += local; obj.innerHTML += global;    
 }
 
+var global = "This is Worldwide Global News<hr>";
+
 function init() 
 {
     var obj = document.getElementById("panel");
@@ -19,4 +19,4 @@ function init()
     us( obj );
     us( obj );
 }
-document.addEventListener("DOMConetenLoaded", init, false)
+document.addEventListener("DOMContentLoaded", init, false)
