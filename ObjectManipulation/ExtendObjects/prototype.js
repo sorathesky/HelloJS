@@ -21,5 +21,19 @@ function init()
         }    
     }
     panel.innerHTML += "<hr>";
+
+    myCar.make = "Dodge";
+    myCar.model = "Challenger";
+    myCar.color = "Orange";
+    myCar.doors = 2;
+
+    for (property in myCar)
+    {
+        if(myCar[ property ] !== "")
+        {
+            panel.innerHTML +=
+                (property + ": " + myCar[ property ] + "<br>");
+        }
+    }
 }
 document.addEventListener("DOMContentLoaded", init, false);
