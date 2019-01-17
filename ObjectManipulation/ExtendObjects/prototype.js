@@ -8,5 +8,18 @@ function Car(make, model, color)
 function init() 
 {
     var panel = document.getElementById("panel");
-    var myCar = new Car("Ford", " Focus", "Blue");    
+    var myCar = new Car("Ford", " Focus", "Blue");  
+    
+    Car.prototype.doors = 4;
+
+    for (property in myCar) 
+    {
+        if (myCar[ property ] !== "") 
+        {
+            panel.innerHTML +=
+                (property + ": " + myCar[ property ] + "<br>");    
+        }    
+    }
+    panel.innerHTML += "<hr>";
 }
+document.addEventListener("DOMContentLoaded", init, false);
