@@ -11,7 +11,7 @@ function init()
         panel.innerHTML += "<br>Element " + i + ": " + arr[i];
     }
 
-    panel.innerHTML += "Read Elements...<br>True: ";
+    panel.innerHTML += "<hr>Read Elements...<br>True: ";
     for ( i = 1; i < arr.length; i++) 
     {
         if (arr[i])
